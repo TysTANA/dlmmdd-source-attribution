@@ -122,6 +122,10 @@ This notebook is for post-deadline diagnostic analysis and is not required for r
 - The post-deadline diagnostic experiments are included for analysis only and should not be interpreted as official challenge results.
 - The exact runtime depends on hardware, CUDA/cuDNN versions, storage speed, and whether branch probability files are regenerated from scratch.
 
+## AI assistance disclosure
+
+Parts of the code organization, commenting, and documentation preparation were supported by ChatGPT. The author reviewed, modified, and validated the code, experimental settings, and reported results. All final methodological decisions, experiments, and responsibility for the released code remain with the author.
+
 ## License
 
 This repository is released under the MIT License. See `LICENSE` for details.
