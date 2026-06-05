@@ -1,0 +1,24 @@
+# Core numerical and data-processing packages
+numpy
+pandas
+scikit-learn
+tqdm
+
+# Deep learning
+# Install torch/torchvision according to your CUDA environment if needed:
+# https://pytorch.org/get-started/locally/
+torch
+torchvision
+timm
+
+# Image processing and augmentation
+albumentations
+opencv-python
+Pillow
+
+# Notebook environment
+jupyter
+ipykernel
+
+# Optional utilities
+matplotlib
