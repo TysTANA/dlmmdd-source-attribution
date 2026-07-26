@@ -1,0 +1,29 @@
+{
+  "analysis_fold": 0,
+  "reference_model": "arcbase_p4",
+  "alignment": "orthogonal rotation/reflection only; no translation and no scaling",
+  "shared_pca_fit": "PCA fitted once to the concatenation of all aligned model embeddings",
+  "explained_variance_ratio": [
+    0.12471282127284398,
+    0.11779941747671571
+  ],
+  "cumulative_explained_variance": 0.24251223874955968,
+  "models": [
+    {
+      "name": "ce_only_p4",
+      "display_name": "CE-only"
+    },
+    {
+      "name": "arc_only_p4",
+      "display_name": "ArcFace-only"
+    },
+    {
+      "name": "arcbase_p4",
+      "display_name": "CE+ArcFace (60:40)"
+    },
+    {
+      "name": "ce20arc80_p4",
+      "display_name": "CE+ArcFace (20:80)"
+    }
+  ]
+}

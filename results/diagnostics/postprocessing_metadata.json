@@ -1,0 +1,70 @@
+{
+  "source_notebook": "Controlled_post-processing_OOF_robustness_evaluation2(3).ipynb",
+  "evaluation": {
+    "seed": 42,
+    "n_splits": 5,
+    "fold_rule": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+    "oof_only": true,
+    "retraining": false,
+    "tta": false,
+    "mixed_precision": false,
+    "softmax_after_logit_fusion": true
+  },
+  "conditions": {
+    "clean": "No additional post-processing.",
+    "jpg70": "JPEG encode/decode at quality 70.",
+    "blur12": "Gaussian blur, sigma=1.2, 5x5 kernel, BORDER_REFLECT_101.",
+    "down50": "50% INTER_AREA downscale and INTER_CUBIC restoration.",
+    "crop80": "80% center crop and INTER_CUBIC restoration."
+  },
+  "models": {
+    "ce_only": {
+      "display_name": "CE-only",
+      "training_objective": "CE 100%, ArcFace 0%",
+      "checkpoint_directory": "ensemble_artifacts/diagnostics",
+      "checkpoint_pattern": "arcface_base_ce_only_best_fold{fold}.pth",
+      "inference_ce_weight": 1.0,
+      "inference_arc_weight": 0.0,
+      "image_size": 384,
+      "embedding_dim": 512,
+      "arc_s": 30.0,
+      "arc_m": 0.3
+    },
+    "arcface_only": {
+      "display_name": "ArcFace-only",
+      "training_objective": "CE 0%, ArcFace 100%",
+      "checkpoint_directory": "ensemble_artifacts/diagnostics",
+      "checkpoint_pattern": "arcface_base_arcface_only_best_fold{fold}.pth",
+      "inference_ce_weight": 0.0,
+      "inference_arc_weight": 1.0,
+      "image_size": 384,
+      "embedding_dim": 512,
+      "arc_s": 30.0,
+      "arc_m": 0.3
+    },
+    "ce_arc_60_40": {
+      "display_name": "CE+ArcFace 60:40",
+      "training_objective": "CE 60%, ArcFace 40%",
+      "checkpoint_directory": "ensemble_artifacts",
+      "checkpoint_pattern": "arcface_base_best_fold{fold}.pth",
+      "inference_ce_weight": 0.5,
+      "inference_arc_weight": 0.5,
+      "image_size": 384,
+      "embedding_dim": 512,
+      "arc_s": 30.0,
+      "arc_m": 0.3
+    },
+    "ce_arc_20_80": {
+      "display_name": "CE+ArcFace 20:80",
+      "training_objective": "CE 20%, ArcFace 80%",
+      "checkpoint_directory": "ensemble_artifacts/diagnostics",
+      "checkpoint_pattern": "arcface_base_ce20arc80_best_fold{fold}.pth",
+      "inference_ce_weight": 0.5,
+      "inference_arc_weight": 0.5,
+      "image_size": 384,
+      "embedding_dim": 512,
+      "arc_s": 30.0,
+      "arc_m": 0.3
+    }
+  }
+}
