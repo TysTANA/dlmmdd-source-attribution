@@ -1,0 +1,101 @@
+model,display_name,condition,fold,n_samples,accuracy
+ce_only,CE-only,clean,0,1400,0.9885714285714285
+ce_only,CE-only,clean,1,1400,0.9742857142857143
+ce_only,CE-only,clean,2,1400,0.9807142857142858
+ce_only,CE-only,clean,3,1400,0.9957142857142857
+ce_only,CE-only,clean,4,1400,0.9914285714285714
+ce_only,CE-only,jpg70,0,1400,0.98
+ce_only,CE-only,jpg70,1,1400,0.95
+ce_only,CE-only,jpg70,2,1400,0.9521428571428572
+ce_only,CE-only,jpg70,3,1400,0.9857142857142858
+ce_only,CE-only,jpg70,4,1400,0.9807142857142858
+ce_only,CE-only,blur12,0,1400,0.9842857142857143
+ce_only,CE-only,blur12,1,1400,0.9528571428571428
+ce_only,CE-only,blur12,2,1400,0.9757142857142858
+ce_only,CE-only,blur12,3,1400,0.9942857142857143
+ce_only,CE-only,blur12,4,1400,0.9807142857142858
+ce_only,CE-only,down50,0,1400,0.9864285714285714
+ce_only,CE-only,down50,1,1400,0.965
+ce_only,CE-only,down50,2,1400,0.98
+ce_only,CE-only,down50,3,1400,0.995
+ce_only,CE-only,down50,4,1400,0.9871428571428571
+ce_only,CE-only,crop80,0,1400,0.9857142857142858
+ce_only,CE-only,crop80,1,1400,0.9671428571428572
+ce_only,CE-only,crop80,2,1400,0.985
+ce_only,CE-only,crop80,3,1400,0.9914285714285714
+ce_only,CE-only,crop80,4,1400,0.9878571428571429
+arcface_only,ArcFace-only,clean,0,1400,0.9871428571428571
+arcface_only,ArcFace-only,clean,1,1400,0.9964285714285714
+arcface_only,ArcFace-only,clean,2,1400,0.9828571428571429
+arcface_only,ArcFace-only,clean,3,1400,0.9928571428571429
+arcface_only,ArcFace-only,clean,4,1400,0.99
+arcface_only,ArcFace-only,jpg70,0,1400,0.9864285714285714
+arcface_only,ArcFace-only,jpg70,1,1400,0.9821428571428571
+arcface_only,ArcFace-only,jpg70,2,1400,0.955
+arcface_only,ArcFace-only,jpg70,3,1400,0.9728571428571429
+arcface_only,ArcFace-only,jpg70,4,1400,0.9807142857142858
+arcface_only,ArcFace-only,blur12,0,1400,0.9857142857142858
+arcface_only,ArcFace-only,blur12,1,1400,0.9928571428571429
+arcface_only,ArcFace-only,blur12,2,1400,0.9807142857142858
+arcface_only,ArcFace-only,blur12,3,1400,0.9885714285714285
+arcface_only,ArcFace-only,blur12,4,1400,0.99
+arcface_only,ArcFace-only,down50,0,1400,0.9871428571428571
+arcface_only,ArcFace-only,down50,1,1400,0.9942857142857143
+arcface_only,ArcFace-only,down50,2,1400,0.9828571428571429
+arcface_only,ArcFace-only,down50,3,1400,0.9885714285714285
+arcface_only,ArcFace-only,down50,4,1400,0.9907142857142858
+arcface_only,ArcFace-only,crop80,0,1400,0.9842857142857143
+arcface_only,ArcFace-only,crop80,1,1400,0.985
+arcface_only,ArcFace-only,crop80,2,1400,0.9842857142857143
+arcface_only,ArcFace-only,crop80,3,1400,0.985
+arcface_only,ArcFace-only,crop80,4,1400,0.99
+ce_arc_60_40,CE+ArcFace 60:40,clean,0,1400,0.9871428571428571
+ce_arc_60_40,CE+ArcFace 60:40,clean,1,1400,0.9885714285714285
+ce_arc_60_40,CE+ArcFace 60:40,clean,2,1400,0.9864285714285714
+ce_arc_60_40,CE+ArcFace 60:40,clean,3,1400,0.9957142857142857
+ce_arc_60_40,CE+ArcFace 60:40,clean,4,1400,0.9907142857142858
+ce_arc_60_40,CE+ArcFace 60:40,jpg70,0,1400,0.9764285714285714
+ce_arc_60_40,CE+ArcFace 60:40,jpg70,1,1400,0.9778571428571429
+ce_arc_60_40,CE+ArcFace 60:40,jpg70,2,1400,0.9685714285714285
+ce_arc_60_40,CE+ArcFace 60:40,jpg70,3,1400,0.9692857142857143
+ce_arc_60_40,CE+ArcFace 60:40,jpg70,4,1400,0.98
+ce_arc_60_40,CE+ArcFace 60:40,blur12,0,1400,0.9821428571428571
+ce_arc_60_40,CE+ArcFace 60:40,blur12,1,1400,0.9864285714285714
+ce_arc_60_40,CE+ArcFace 60:40,blur12,2,1400,0.9785714285714285
+ce_arc_60_40,CE+ArcFace 60:40,blur12,3,1400,0.9857142857142858
+ce_arc_60_40,CE+ArcFace 60:40,blur12,4,1400,0.9842857142857143
+ce_arc_60_40,CE+ArcFace 60:40,down50,0,1400,0.985
+ce_arc_60_40,CE+ArcFace 60:40,down50,1,1400,0.9878571428571429
+ce_arc_60_40,CE+ArcFace 60:40,down50,2,1400,0.9835714285714285
+ce_arc_60_40,CE+ArcFace 60:40,down50,3,1400,0.9892857142857143
+ce_arc_60_40,CE+ArcFace 60:40,down50,4,1400,0.99
+ce_arc_60_40,CE+ArcFace 60:40,crop80,0,1400,0.9907142857142858
+ce_arc_60_40,CE+ArcFace 60:40,crop80,1,1400,0.9864285714285714
+ce_arc_60_40,CE+ArcFace 60:40,crop80,2,1400,0.9864285714285714
+ce_arc_60_40,CE+ArcFace 60:40,crop80,3,1400,0.9814285714285714
+ce_arc_60_40,CE+ArcFace 60:40,crop80,4,1400,0.9864285714285714
+ce_arc_20_80,CE+ArcFace 20:80,clean,0,1400,0.9914285714285714
+ce_arc_20_80,CE+ArcFace 20:80,clean,1,1400,0.9914285714285714
+ce_arc_20_80,CE+ArcFace 20:80,clean,2,1400,0.9892857142857143
+ce_arc_20_80,CE+ArcFace 20:80,clean,3,1400,0.99
+ce_arc_20_80,CE+ArcFace 20:80,clean,4,1400,0.9885714285714285
+ce_arc_20_80,CE+ArcFace 20:80,jpg70,0,1400,0.9764285714285714
+ce_arc_20_80,CE+ArcFace 20:80,jpg70,1,1400,0.9828571428571429
+ce_arc_20_80,CE+ArcFace 20:80,jpg70,2,1400,0.9857142857142858
+ce_arc_20_80,CE+ArcFace 20:80,jpg70,3,1400,0.9792857142857143
+ce_arc_20_80,CE+ArcFace 20:80,jpg70,4,1400,0.9735714285714285
+ce_arc_20_80,CE+ArcFace 20:80,blur12,0,1400,0.9835714285714285
+ce_arc_20_80,CE+ArcFace 20:80,blur12,1,1400,0.9921428571428571
+ce_arc_20_80,CE+ArcFace 20:80,blur12,2,1400,0.9857142857142858
+ce_arc_20_80,CE+ArcFace 20:80,blur12,3,1400,0.9871428571428571
+ce_arc_20_80,CE+ArcFace 20:80,blur12,4,1400,0.9778571428571429
+ce_arc_20_80,CE+ArcFace 20:80,down50,0,1400,0.9864285714285714
+ce_arc_20_80,CE+ArcFace 20:80,down50,1,1400,0.9914285714285714
+ce_arc_20_80,CE+ArcFace 20:80,down50,2,1400,0.9871428571428571
+ce_arc_20_80,CE+ArcFace 20:80,down50,3,1400,0.9885714285714285
+ce_arc_20_80,CE+ArcFace 20:80,down50,4,1400,0.9821428571428571
+ce_arc_20_80,CE+ArcFace 20:80,crop80,0,1400,0.9885714285714285
+ce_arc_20_80,CE+ArcFace 20:80,crop80,1,1400,0.9928571428571429
+ce_arc_20_80,CE+ArcFace 20:80,crop80,2,1400,0.9892857142857143
+ce_arc_20_80,CE+ArcFace 20:80,crop80,3,1400,0.9871428571428571
+ce_arc_20_80,CE+ArcFace 20:80,crop80,4,1400,0.9792857142857143
