@@ -37,6 +37,48 @@ dlmmdd-source-attribution/
     └── README.md
 ```
 
+## Paper-related diagnostic analyses
+
+This repository also includes the post-challenge diagnostic analyses
+used in the camera-ready paper:
+
+**Angular-Margin Representation Learning for Synthetic Image Source
+Attribution under Controlled Post-Processing Shifts**
+
+The diagnostic analyses are separated from the official challenge
+reproduction because they were conducted after the competition deadline.
+
+### Analysis notebooks
+
+- [`diagnostics/analysis/representation_analysis.ipynb`](diagnostics/analysis/representation_analysis.ipynb)  
+  Reproduces the representation metrics in Table 1, the shared-PCA
+  comparison in Figure 2, and the supplementary t-SNE visualization.
+
+- [`diagnostics/analysis/postprocessing_robustness.ipynb`](diagnostics/analysis/postprocessing_robustness.ipynb)  
+  Reproduces the controlled post-processing robustness results in
+  Table 2.
+
+### Diagnostic training notebooks
+
+- [`diagnostics/training/train_ce_only_arcface_only.ipynb`](diagnostics/training/train_ce_only_arcface_only.ipynb)
+- [`diagnostics/training/train_ce20arc80_paper.ipynb`](diagnostics/training/train_ce20arc80_paper.ipynb)
+- [`diagnostics/training/ensemble_arcface_traingrid_norm_sweep.ipynb`](diagnostics/training/ensemble_arcface_traingrid_norm_sweep.ipynb)
+
+### Paper-facing results
+
+- [Table 1: representation metrics](results/diagnostics/table1_representation_metrics.csv)
+- [Table 2: controlled post-processing robustness](results/diagnostics/table2_postprocessing_accuracy.csv)
+- [Figure 2: shared-PCA comparison](results/diagnostics/figure2_shared_pca.png)
+- [Supplementary t-SNE visualization](results/diagnostics/supplementary_tsne_fold0.png)
+- [Notebook provenance and SHA-256 records](docs/NOTEBOOK_PROVENANCE.md)
+
+Datasets, model checkpoints, probability arrays, and sample-level
+outputs are intentionally excluded from the repository.
+
+### Shared-PCA comparison
+
+![Shared-PCA representation comparison](results/diagnostics/figure2_shared_pca.png)
+
 ## Notebooks
 
 ### `dlmmdd_solution_reproduction.ipynb`
